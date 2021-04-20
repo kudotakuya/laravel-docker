@@ -34,6 +34,8 @@ remake:
 	@make init
 stop:
 	docker-compose stop
+rm:
+	docker-compose rm
 down:
 	docker-compose down --remove-orphans
 restart:

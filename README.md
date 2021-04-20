@@ -14,7 +14,8 @@ Build a simple laravel development environment with docker-compose.
 ```bash
 $ git clone git@github.com:kudotakuya/laravel-docker.git
 $ cd laravel-docker
-$ cp backend/.env.example .env
+$ cp backend/.env.example backend/.env
+$ make build
 $ make up
 $ make app
 $ composer install

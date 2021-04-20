@@ -12,13 +12,21 @@ Build a simple laravel development environment with docker-compose.
 ## Usage
 
 ```bash
-$ git clone git@github.com:ucan-lab/docker-laravel.git
-$ cd docker-laravel
-$ make create-project # Install the latest Laravel project
-$ make install-recommend-packages # Not required
+$ git clone git@github.com:kudotakuya/laravel-docker.git
+$ cd laravel-docker
+$ cp backend/.env.example .env
+$ make up
+$ make app
+$ composer install
+$ php artisan key:generate
+$ php artisan migrate
+$ exit
+$ make web
+$ yarn install
+$ yarn dev
+$ exit
 ```
-
-http://localhost
+Access http://localhost
 
 Read this [Makefile](https://github.com/ucan-lab/docker-laravel/blob/master/Makefile).
 
